@@ -1,0 +1,68 @@
+---
+layout: default
+---
+		<section  data-start="top:80px;" data-300="top: 700px;"   class="bigherotext">
+			<div>
+				<h3 
+					data-100-start="opacity:0;" data-300="opacity:1;" >The</h3>
+			</div>
+			
+			<h1 data-start="font-size:15vw;" data-200="font-size: 8vw;">Creative <br> Masterminds</h1>
+		</section>
+
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas">
+
+					</canvas>
+
+				</div>
+		</div><!-- /container -->
+
+		
+		
+		<section id="aboutus">
+			<article class="information cl-effect-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque odio iste commodi fugiat adipisci, soluta excepturi nam aliquid! Distinctio at quas magni, quidem cum impedit reprehenderit sint, culpa illo quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga sed vel libero minima, eos veniam voluptatibus fugit recusandae, officia, quos beatae vero facere harum rerum dolorum quasi velit ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, dignissimos itaque distinctio voluptate illum repellendus earum velit molestiae optio ea totam animi explicabo ad ullam, maxime recusandae adipisci, modi culpa.</p>
+				<a class="">Read Our Blog!</a>
+			</article>
+			<article class="authors" id="slideshow">	
+				{% for author in site.data.authors %}
+			    	<div>
+			        	<img src="{{site.baseurl}}/img/avatars/{{author.avatar}}" alt="author avatar">
+			          	<h5>{{author.name}}</h5>
+			          	<h6>Position: {{author.job}}</h6>
+			         	<h6>Bio</h6>
+			          	<p>{{author.bio}}</p>
+					</div>
+			  	{% endfor %}
+			</article>
+
+
+		<!-- 	<div id="slideshow">
+	  			 <div>
+	     			<img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+	   			</div>
+	   			<div>
+	   			  <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+	   			</div>
+	  			 <div>
+	     		Pretty cool eh? This slide is proof the content can be anything.
+	   			</div>
+			</div> -->
+		
+
+
+		</section>
+		
+		
+
+
+
+
+
+
+
+
+

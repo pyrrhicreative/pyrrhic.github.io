@@ -1,0 +1,16 @@
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: fixed ; 
+	z-index: 1;
+	height: 100vh;
+
+}
+
+.demo-1 .large-header {
+	background-image: url('../img/firework.jpeg');
+}

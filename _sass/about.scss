@@ -1,0 +1,57 @@
+#aboutus{
+	background-image: url('../img/about-background.jpg');
+	background-size: cover; 
+	text-align: center; 
+	// padding-top: 30vw;
+
+	height: 100vh; 
+	.information{
+		width: 50%;
+		float: left; 
+		text-align: left; 
+		margin-left: 2vw;
+		margin-top: 2em;
+		padding-top: 35vw;
+		a{
+			float: right;
+			background-color: white; 
+			padding: .5em; 
+		}
+	}
+	.authors{
+		
+		li{
+			float: left; 
+			
+				img{
+					height: 200px; 
+					width: auto; 
+				}
+			} 
+		}
+	}
+
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 40%; 
+    height: 240px; 
+    padding: 10px; 
+    float: right; 
+    margin-top: 10em;
+    div{
+    	img{
+    		width: 10em; 
+    		height: auto; 
+    	}
+    }
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}

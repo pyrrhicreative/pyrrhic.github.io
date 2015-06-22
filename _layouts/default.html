@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    <nav data-anchor-target="#aboutus" 
+
+    data-200-top="top: 20px;
+                  background:transparent;
+                  transition: background .5s ease-out;
+                  width: 100%
+                  border-bottom: .15em solid #fff;
+                  border-left: .15em solid #fff;
+                  border-right: .15em solid #fff;
+                  border-top: .15em solid #fff;
+                  transition:border-bottom .5s ease-out;
+                  transition:border-left .5s ease-out;
+                  transition:border-right .5s ease-out;
+                  transition:border-top .5s ease-out;
+                " 
+    data-100-top=" 
+                      top: 0px;
+                      width: 85%;
+                      background:black;
+                      transition: background .5s ease-out;
+                      border-bottom: 0em solid #fff;
+                      border-left: 0em solid #fff;
+                      border-right: 0em solid #fff;
+                      border-top: 0em solid #fff;
+                      
+                      " 
+    id="nav-main">
+        
+        <section 
+            data-100-top="padding-left:20px; "
+        class="logo">
+            <h3>Pyrrhic</h3>
+        </section>
+        <section class="nav-list">
+            <ul class='cl-effect-1'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Journal</a></li>
+            </ul>
+        </section>
+        <section class="nav-social">
+            <ul class="cl-effect-1">
+                <li>
+                    <a href="" #><i class="fa fa-facebook fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="" #><i class="fa fa-behance fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="" #><i class="fa fa-twitter fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="" #><i class="fa fa-instagram fa-lg"></i></a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    {{content}}
+    <div style="height:1000px; background: black;"></div>
+    <script src="{{site.baseurl}}/js/demo-1.js"></script>
+    <script src="{{site.baseurl}}/js/EasePack.min.js"></script>
+    <script src="{{site.baseurl}}/js/rAF.js"></script>
+    <script src="{{site.baseurl}}/js/TweenLite.min.js"></script>
+    <script src="midnight.jquery.js"></script>
+    <script>
+    // Start midnight
+    $(document).ready(function() {
+        // Change this to the correct selector for your nav.
+        $('#nav-main').midnight();
+    });
+    </script>
+    <script>
+    var s = skrollr.init();
+    </script>
+</body>
+
+</html>
